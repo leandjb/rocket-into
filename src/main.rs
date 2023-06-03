@@ -5,18 +5,18 @@ use rocket_dyn_templates::{Template, context};
 #[get("/")]
 fn index() -> Template {
     Template::render("index", context! {
-        title: "RESPONSE from Rocket.rs"
+        title: "Web Application from Rocket.rs"
     })
 }
 
 #[get("/about")]
 fn about() -> &'static str {
-    "ABOUT PAGE"
+    "ABOUT - PAGE"
 }
 
 #[get("/")]
 fn create_profile() -> &'static str {
-    "PROFILE PAGE"
+    "PROFILE - PAGE"
 }
 
 #[post("/")]
