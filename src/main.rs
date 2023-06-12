@@ -11,27 +11,27 @@ fn index() -> Template {
 
 #[get("/about")]
 fn about() -> &'static str {
-    "ABOUT - PAGE"
+    "ABOUT - Title"
 }
 
 #[get("/")]
 fn create_profile() -> &'static str {
-    "PROFILE - PAGE"
+    "PROFILE - Title"
 }
 
 #[post("/")]
 fn profile() -> &'static str {
-    "Creating profile..."
+    "Message: profile created."
 }
 
 #[patch("/")]
 fn update_profile() -> &'static str {
-    "profile updated"
+    "Message: profile updated."
 }
 
 #[delete("/")]
 fn delete_profile() -> &'static str {
-    "Deleting profile..."
+    "Message: profile deleted."
 }
 
 #[launch]
